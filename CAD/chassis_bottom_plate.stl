@@ -1,0 +1,72 @@
+solid cliper_x_chassis_bottom
+  facet normal 0.0 0.0 -1.0
+    outer loop
+      vertex -97.5 -67.5 0.0
+      vertex 97.5 -67.5 0.0
+      vertex 97.5 67.5 0.0
+    endloop
+  endfacet
+  facet normal 0.0 0.0 -1.0
+    outer loop
+      vertex -97.5 -67.5 0.0
+      vertex 97.5 67.5 0.0
+      vertex -97.5 67.5 0.0
+    endloop
+  endfacet
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex -97.5 -67.5 0.0
+      vertex 97.5 -67.5 0.0
+      vertex 97.5 -67.5 32.0
+    endloop
+  endfacet
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex -97.5 -67.5 0.0
+      vertex 97.5 -67.5 32.0
+      vertex -97.5 -67.5 32.0
+    endloop
+  endfacet
+  facet normal 0.0 1.0 0.0
+    outer loop
+      vertex -97.5 67.5 0.0
+      vertex 97.5 67.5 32.0
+      vertex 97.5 67.5 0.0
+    endloop
+  endfacet
+  facet normal 0.0 1.0 0.0
+    outer loop
+      vertex -97.5 67.5 0.0
+      vertex -97.5 67.5 32.0
+      vertex 97.5 67.5 32.0
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex -97.5 -67.5 0.0
+      vertex -97.5 67.5 0.0
+      vertex -97.5 67.5 32.0
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex -97.5 -67.5 0.0
+      vertex -97.5 67.5 32.0
+      vertex -97.5 -67.5 32.0
+    endloop
+  endfacet
+  facet normal 1.0 0.0 0.0
+    outer loop
+      vertex 97.5 -67.5 0.0
+      vertex 97.5 67.5 32.0
+      vertex 97.5 67.5 0.0
+    endloop
+  endfacet
+  facet normal 1.0 0.0 0.0
+    outer loop
+      vertex 97.5 -67.5 0.0
+      vertex 97.5 -67.5 32.0
+      vertex 97.5 67.5 32.0
+    endloop
+  endfacet
+endsolid cliper_x_chassis_bottom

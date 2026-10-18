@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; }
+      .box { fill: #161b22; stroke: #30363d; stroke-width: 2; rx: 8; }
+      .rpi-box { fill: #1c2128; stroke: #e06c75; stroke-width: 3; rx: 10; }
+      .title { fill: #58a6ff; font-family: monospace; font-size: 18px; font-weight: bold; }
+      .sub-title { fill: #8b949e; font-family: monospace; font-size: 12px; }
+      .pin { fill: #c9d1d9; font-family: monospace; font-size: 13px; }
+      .highlight { fill: #7ee787; font-family: monospace; font-size: 13px; font-weight: bold; }
+      .wire-pwr { stroke: #f85149; stroke-width: 3; fill: none; stroke-dasharray: 6,3; }
+      .wire-data { stroke: #58a6ff; stroke-width: 2.5; fill: none; }
+      .wire-i2c { stroke: #d29922; stroke-width: 2.5; fill: none; }
+      .wire-pwm { stroke: #bc8cff; stroke-width: 2.5; fill: none; }
+      .legend-text { fill: #c9d1d9; font-family: monospace; font-size: 12px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="650" class="bg" />
+
+  <!-- Diagram Title -->
+  <text x="50" y="40" class="title" font-size="22">CLIPER-X-OS HARDWARE WIRING &amp; PINOUT SCHEMATIC</text>
+  <text x="50" y="65" class="sub-title">Hack Club Stardance Hardware Architecture | Raspberry Pi 5 Subsystems</text>
+
+  <!-- Central RPi5 Box -->
+  <rect x="360" y="140" width="280" height="360" class="rpi-box" />
+  <text x="400" y="175" class="highlight" font-size="16">Raspberry Pi 5 (16GB)</text>
+  <text x="380" y="200" class="pin">BCM2712 Quad-Core @ 2.4GHz</text>
+  <line x1="380" y1="210" x2="620" y2="210" stroke="#30363d" stroke-width="1"/>
+  
+  <text x="380" y="240" class="pin">Pin 1 (3.3V) &amp; Pin 2 (5V)</text>
+  <text x="380" y="270" class="pin">Pin 3 (I2C1 SDA) / Pin 5 (SCL)</text>
+  <text x="380" y="300" class="pin">Pin 6 (GND)</text>
+  <text x="380" y="330" class="pin">PCIe Gen 2/3 (16-Pin FFC)</text>
+  <text x="380" y="360" class="pin">MIPI DSI 2-Lane Port</text>
+  <text x="380" y="390" class="pin">USB 3.0 Dual Ports (Blue)</text>
+  <text x="380" y="420" class="pin">4-Pin PWM Fan JST Header</text>
+  <text x="380" y="450" class="pin">USB-C PD In (5V/5A, 45W)</text>
+
+  <!-- TOP: 7" IPS Touchscreen -->
+  <rect x="370" y="10" width="260" height="80" class="box" />
+  <text x="390" y="35" class="highlight">7" IPS Touch Display</text>
+  <text x="390" y="55" class="sub-title">1024x600 Capacitive Touch</text>
+  <text x="390" y="75" class="pin">DSI Ribbon + I2C Touch</text>
+
+  <!-- BOTTOM: PiSugar 3 Battery HAT -->
+  <rect x="360" y="540" width="280" height="85" class="box" />
+  <text x="380" y="565" class="highlight">PiSugar 3 Plus UPS HAT</text>
+  <text x="380" y="585" class="sub-title">10,000mAh LiPo / I2C 0x57, 0x75</text>
+  <text x="380" y="605" class="pin">5.1V / 3A Boost Output + PD Charge</text>
+
+  <!-- LEFT: NVMe SSD Base -->
+  <rect x="40" y="150" width="240" height="90" class="box" />
+  <text x="60" y="180" class="highlight">Pimoroni NVMe Base</text>
+  <text x="60" y="200" class="sub-title">Kingston 256GB M.2 SSD</text>
+  <text x="60" y="220" class="pin">PCIe 1-Lane FFC (16-Pin)</text>
+
+  <!-- LEFT BOTTOM: Active Cooler -->
+  <rect x="40" y="320" width="240" height="85" class="box" />
+  <text x="60" y="350" class="highlight">RPi 5 Active Cooler</text>
+  <text x="60" y="370" class="sub-title">PWM Controlled Blower</text>
+  <text x="60" y="390" class="pin">4-Pin Dedicated JST Connector</text>
+
+  <!-- RIGHT TOP: Alfa AWUS036ACH WiFi -->
+  <rect x="720" y="150" width="240" height="90" class="box" />
+  <text x="740" y="180" class="highlight">Alfa AWUS036ACH WiFi</text>
+  <text x="740" y="200" class="sub-title">Dual-Band AC1200 RTL8812AU</text>
+  <text x="740" y="220" class="pin">USB 3.0 (Packet Injection)</text>
+
+  <!-- RIGHT BOTTOM: USB Hub & Peripherals -->
+  <rect x="720" y="320" width="240" height="95" class="box" />
+  <text x="740" y="350" class="highlight">4-Port USB Hub &amp; Keys</text>
+  <text x="740" y="370" class="sub-title">Keyboard + HackRF / SDR</text>
+  <text x="740" y="395" class="pin">USB-C PD Passthrough Hub</text>
+
+  <!-- WIRING LINES -->
+  <!-- DSI: Display to RPi5 -->
+  <path d="M 500,90 L 500,140" class="wire-data" />
+
+  <!-- Battery to RPi5 -->
+  <path d="M 480,540 L 480,500" class="wire-pwr" />
+  <path d="M 520,540 L 520,500" class="wire-i2c" />
+
+  <!-- NVMe to RPi5 -->
+  <path d="M 280,195 L 360,195" class="wire-data" />
+
+  <!-- Fan to RPi5 -->
+  <path d="M 280,360 L 360,360" class="wire-pwm" />
+
+  <!-- WiFi to RPi5 -->
+  <path d="M 640,195 L 720,195" class="wire-data" />
+
+  <!-- Hub to RPi5 -->
+  <path d="M 640,360 L 720,360" class="wire-data" />
+
+  <!-- LEGEND -->
+  <rect x="40" y="520" width="240" height="110" class="box" />
+  <text x="55" y="545" class="highlight" font-size="13">WIRING BUS LEGEND</text>
+  <line x1="55" y1="565" x2="85" y2="565" class="wire-data" />
+  <text x="95" y="570" class="legend-text">High Speed Data (PCIe/DSI/USB)</text>
+  <line x1="55" y1="585" x2="85" y2="585" class="wire-i2c" />
+  <text x="95" y="590" class="legend-text">I2C Control Bus (SDA/SCL)</text>
+  <line x1="55" y1="605" x2="85" y2="605" class="wire-pwr" />
+  <text x="95" y="610" class="legend-text">Power Delivery 5.1V / Battery</text>
+</svg>

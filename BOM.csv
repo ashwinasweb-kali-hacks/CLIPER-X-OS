@@ -1,0 +1,15 @@
+Item,Component,Description,Quantity,Unit_Price_USD,Shipping_USD,Total_USD,Purchase_Link
+1,Raspberry Pi 5 (16GB RAM),Quad-core ARM Cortex-A76 @ 2.4GHz 16GB LPDDR4X,1,80.00,5.00,85.00,https://www.pishop.us/product/raspberry-pi-5-16gb/
+2,Pimoroni NVMe Base HAT,M.2 M-Key NVMe SSD PCIe expansion base for RPi5,1,18.00,4.00,22.00,https://shop.pimoroni.com/products/nvme-base
+3,Kingston NV2 256GB NVMe SSD,PCIe 4.0 x4 M.2 2280 high-speed SSD storage,1,28.00,0.00,28.00,https://www.amazon.com/dp/B0BDTC589X
+4,7-inch IPS Touchscreen Display,1024x600 Capacitive Touch Screen with DSI Ribbon cable,1,45.00,0.00,45.00,https://www.waveshare.com/7inch-dsi-lcd-c.htm
+5,PiSugar 3 Plus UPS Battery HAT,10000mAh LiPo UPS power supply with I2C voltage/battery telemetry,1,59.99,0.00,59.99,https://www.amazon.com/dp/B09V7S1V27
+6,Official Raspberry Pi 5 Active Cooler,Aluminum heatsink with temperature-controlled PWM blower fan,1,5.00,0.00,5.00,https://www.pishop.us/product/raspberry-pi-5-active-cooler/
+7,Mini 60% Bluetooth Keyboard,Compact wireless mechanical keyboard for cyberdeck palmrest,1,29.99,0.00,29.99,https://www.amazon.com/dp/B0731CJ45W
+8,Alfa AWUS036ACH WiFi Adapter,Dual-Band AC1200 high-gain wireless adapter with packet injection,1,59.99,0.00,59.99,https://www.amazon.com/dp/B00VEEBOPG
+9,4-Port Ultra-Slim USB-C Hub,USB-C hub with 60W Power Delivery passthrough and 4x USB 3.0,1,16.99,0.00,16.99,https://www.amazon.com/dp/B07ZVKTP53
+10,PETG 3D Printing Filament,1kg Black PETG filament for durable laptop enclosure chassis,1,18.99,0.00,18.99,https://www.amazon.com/dp/B07PGZNY34
+11,M2.5 Hardware & Standoff Kit,Brass threaded standoffs + M2.5 socket head screws + nuts,1,9.99,0.00,9.99,https://www.amazon.com/dp/B085HN6ZJ8
+12,Flat Flexible Cables (FFC) & Misc,Replacement 22-pin DSI cable + thermal interface pads,1,9.99,0.00,9.99,https://www.amazon.com/dp/B0CLL2J92K
+,,,,Subtotal:,371.94,9.00,380.94,
+,,,,Total Funding Requested:,,,380.94,Hack Club Stardance X-Tier Grant

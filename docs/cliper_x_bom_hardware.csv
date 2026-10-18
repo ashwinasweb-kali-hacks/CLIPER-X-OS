@@ -1,0 +1,17 @@
+Item,Component,Model_Specification,Category,Quantity,Unit_Price_USD,Total_Price_USD,Supplier_Notes
+1,Single Board Computer,Raspberry Pi 5 (16GB RAM) Quad-Core Cortex-A76 @ 2.4GHz,Compute,1,80.00,80.00,Official Raspberry Pi Distributor / Pimoroni
+2,Solid State Storage,Pimoroni NVMe Base HAT + 256GB M.2 NVMe SSD,Storage,1,40.00,40.00,PCIe Gen 2.0 / Gen 3.0 interface
+3,Integrated Touch Display,7-inch IPS Capacitive Touchscreen (1024x600 DSI),Display,1,45.00,45.00,Direct DSI Ribbon Cable to RPi5
+4,Battery Management System,PiSugar 3 Plus 10000mAh UPS HAT (I2C telemetry),Power,1,50.00,50.00,I2C battery level / voltage / charging status
+5,Active Thermal Cooling,Official Raspberry Pi 5 Active Cooler (PWM fan + aluminum heatsink),Cooling,1,5.00,5.00,PWM GPIO controlled by fan_controller.py
+6,Compact Input Device,Mini Bluetooth / USB-C Mechanical Keyboard,Input,1,30.00,30.00,Integrated chassis palm rest
+7,Offensive WiFi Adapter,Alfa AWUS036ACH Dual-Band AC1200 (Monitor Mode + Packet Injection),Network,1,60.00,60.00,USB 3.0 Realtek RTL8812AU chipset
+8,Custom Laptop Chassis,Custom 3D-Printed Cyberdeck / Laptop Enclosure (PETG/PLA+),Chassis,1,25.00,25.00,Custom STL files with heat-set brass inserts
+9,I/O Expansion Hub,4-Port Ultra-Slim USB-C Hub with 60W/100W PD Passthrough,I/O,1,20.00,20.00,External device connection (SDR / Ubertooth)
+10,Ribbon Cables & Wiring,DSI FFC ribbons + custom shortened USB-C & USB 3.0 cables,Wiring,1,10.00,10.00,Internal cable management channels
+11,Mounting Hardware,M2.5 brass standoffs + countersunk hex screws + 1.5mm thermal pads,Hardware,1,10.00,10.00,Mechanical assembly and thermal dissipation
+,,,,Total Core Build Cost:,375.00,375.00,Eligible for Hack Club Stardance X-Tier ($600 limit)
+,,,,,,,
+OPTIONAL_UPGRADE,Software Defined Radio,HackRF One (1 MHz to 6 GHz SDR Transceiver),RF / SDR,1,350.00,350.00,Wideband RF signal reception & transmission
+OPTIONAL_UPGRADE,Bluetooth Sniffer,Ubertooth One 2.4GHz Wireless Development Platform,Bluetooth,1,120.00,120.00,BLE capture & injection
+OPTIONAL_UPGRADE,Sub-GHz Receiver,RTL-SDR Blog V4 R828D Receiver,RF / SDR,1,30.00,30.00,Budget signal reconnaissance

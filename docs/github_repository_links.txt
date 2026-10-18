@@ -1,0 +1,49 @@
+================================================================================
+  HACK CLUB STARDANCE HARDWARE GRANT SUBMISSION - REPOSITORY & LINKS
+================================================================================
+
+Project Name: CLIPER X OS (RPi5 Hacking Laptop) + JARVIS AI Wearable System
+Applicant: AVINASHHZ (avi1000.0a@gmail.com)
+Grant Tier: X Tier ($600 Maximum Grant)
+Hardware BOM Total: ~$375 USD
+
+--------------------------------------------------------------------------------
+1. GITHUB REPOSITORIES
+--------------------------------------------------------------------------------
+- Primary GitHub Profile:
+  https://github.com/AVINASHHZ
+
+- CLIPER X OS Hardware & Custom Kali Distribution:
+  https://github.com/AVINASHHZ/CLIPER-X-OS
+
+- JARVIS Edge AI & Ray-Ban Meta Glasses Bridge:
+  https://github.com/AVINASHHZ/JARVIS
+
+- Smart Theatre Seat Engine (DSA Core):
+  https://github.com/AVINASHHZ/smart-theatre-dsa
+
+--------------------------------------------------------------------------------
+2. VIDEO DEMO / YOUTUBE (DEVLOG & HARDWARE ASSEMBLY)
+--------------------------------------------------------------------------------
+- Hardware Build & 3D Print Assembly Demo:
+  https://www.youtube.com/@AVINASHHZ (Devlog & Assembly Stream)
+  [Insert your unlisted / public YouTube demo link here before final review]
+
+--------------------------------------------------------------------------------
+3. HACK CLUB STARDANCE CHALLENGE
+--------------------------------------------------------------------------------
+- Hack Club Stardance Portal:
+  https://stardance.hackclub.com
+- Hack Club Slack:
+  https://hackclub.com/slack (#stardance / #hardware channels)
+- Grant Category: X Tier (Physical Hardware Build, Custom PCB/Enclosure, Custom OS)
+
+--------------------------------------------------------------------------------
+4. INCLUDED SUBMISSION ASSETS IN THIS ZIP ARCHIVE
+--------------------------------------------------------------------------------
+- cliper_x_bom_hardware.csv       -> Complete itemized Bill of Materials with pricing ($375)
+- cliper_x_pc_design_specs.csv    -> PC Hardware interfaces, bus connections, pinouts & voltage
+- STARDANCE_SUBMISSION.md         -> Full official submission document with diagrams & specs
+- README_SUBMISSION.txt           -> Overview for Hack Club Review Team
+
+================================================================================

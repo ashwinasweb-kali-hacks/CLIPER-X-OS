@@ -1,0 +1,13 @@
+[Unit]
+Description=Cliper X OS Fan Controller
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/cliperx/hardware/fan_controller.py
+Restart=always
+RestartSec=10
+User=root
+
+[Install]
+WantedBy=multi-user.target

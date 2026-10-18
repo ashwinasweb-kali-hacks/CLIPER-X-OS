@@ -1,0 +1,12 @@
+Subsystem,Module_Name,Interface_Bus,Operating_Voltage,Max_Current_Draw,Pinout_Connection,Description_Function
+Compute,Raspberry Pi 5 (16GB),PCIe 2.0 / I2C / UART / SPI / USB 3.0,5.1V DC (USB-C PD),2500mA,Main Board,Primary compute node running Kali Linux ARM64 (6.6 LTS)
+Storage,Pimoroni NVMe Base HAT,PCIe 1-lane FFC,3.3V DC (PCIe),200mA,16-pin 0.5mm pitch PCIe FFC,High-speed OS rootfs & storage (NVMe 256GB+)
+Display,7-inch IPS Capacitive Touch,MIPI DSI 2-lane + I2C Touch,5.0V DC (DSI / GPIO),500mA,22-pin 0.5mm DSI connector (RPi5),1024x600 resolution video output & touch input
+Battery_Power,PiSugar 3 Plus UPS,I2C1 (Bus 1),3.7V - 4.2V (LiPo) to 5.1V boost,3000mA continuous,GPIO Header (Pins 1/3/5/6/9 - 5V/GND/SDA/SCL),10000mAh battery management with I2C voltage & capacity readout
+Cooling,Official Active Cooler,PWM GPIO + 4-pin JST-SH,5.0V DC,100mA,Dedicated 4-pin fan connector on RPi5,Dynamic thermal regulation via fan_controller.py
+Network_Primary,Alfa AWUS036ACH,USB 3.0 Type-A,5.0V DC,400mA,USB 3.0 Port 0,Dual-band 802.11ac monitor mode & packet injection adapter
+Input,Mini Mechanical Keyboard,Bluetooth 5.0 / USB-C,3.7V Internal / 5V USB,80mA,Chassis recessed bay / internal USB hub,Primary alphanumeric control for i3wm tiling environment
+I/O_Hub,USB-C 4-Port Expansion,USB 3.1 Gen 1,5.0V DC (Bus powered / PD),900mA shared,Side chassis cutout,Expansion for SDR / Ubertooth / YubiKey hardware
+Power_Input,USB-C PD Charging Controller,USB-C Power Delivery 3.0,9V/12V/15V PD (45W),3000mA,External USB-C charge port,Fast-charging battery pack while powering live system
+Security_Hardware,Ateg Cryptographic Security,LUKS dm-crypt + MAC Randomizer,N/A (Software/Hardware),0mA,NVMe rootfs layer,Hardware-tied full disk encryption & privacy controls
+Companion_Link,JARVIS Bridge,BLE 5.2 / WiFi 6,3.3V / Onboard,150mA,Onboard RPi5 Cypress CYW43455,gRPC / BLE streaming to Ray-Ban Meta Glasses & Pixel

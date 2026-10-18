@@ -1,0 +1,104 @@
+# Cliper X OS — Alacritty Terminal Configuration
+
+[general]
+live_config_reload = true
+import = []
+
+[window]
+padding = { x = 8, y = 8 }
+decorations = "none"
+opacity = 0.92
+blur = true
+title = "Cliper X Terminal"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+# Cliper X Dark Theme (red/dark blue accent)
+[colors.primary]
+background = "#0a0a1a"
+foreground = "#e0e0e0"
+
+[colors.cursor]
+text = "#0a0a1a"
+cursor = "#ff6e6e"
+
+[colors.vi_mode_cursor]
+text = "#0a0a1a"
+cursor = "#ff6e6e"
+
+[colors.selection]
+text = "#e0e0e0"
+background = "#1a1a3e"
+
+[colors.search.matches]
+foreground = "#0a0a1a"
+background = "#ff6e6e"
+
+[colors.normal]
+black   = "#1a1a2e"
+red     = "#e94560"
+green   = "#00ff88"
+yellow  = "#ffaa00"
+blue    = "#0f3460"
+magenta = "#ff6e6e"
+cyan    = "#00d4ff"
+white   = "#e0e0e0"
+
+[colors.bright]
+black   = "#555555"
+red     = "#ff6e6e"
+green   = "#33ffaa"
+yellow  = "#ffcc44"
+blue    = "#4488ff"
+magenta = "#ff8888"
+cyan    = "#44eeff"
+white   = "#ffffff"
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+blink_interval = 750
+
+[mouse]
+hide_when_typing = true
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "Plus"
+mods = "Control"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Minus"
+mods = "Control"
+action = "DecreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"

@@ -1,0 +1,209 @@
+# Cliper X OS — i3wm Configuration
+# Keyboard-driven tiling window manager for hacking workflows
+
+# Mod key = Super (Windows key)
+set $mod Mod4
+
+# Font
+font pango:Hack Nerd Font 10
+
+# Gaps
+gaps inner 8
+gaps outer 4
+smart_gaps on
+
+# Borders
+default_border pixel 2
+default_floating_border pixel 2
+
+# Colors (Cliper X dark theme)
+# class                 border    bg        text      indicator child_border
+client.focused          #ff6e6e   #1a1a2e   #ffffff   #ff6e6e   #ff6e6e
+client.focused_inactive #16213e   #16213e   #888888   #16213e   #16213e
+client.unfocused        #0f3460   #0f3460   #555555   #0f3460   #0f3460
+client.urgent           #e94560   #e94560   #ffffff   #e94560   #e94560
+
+# ========================
+# Autostart
+# ========================
+
+# Polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Compositor (transparency, blur)
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+
+# Wallpaper
+exec_always --no-startup-id feh --bg-fill /usr/share/backgrounds/cliperx/default.png
+
+# Network Manager applet
+exec --no-startup-id nm-applet
+
+# Notification daemon
+exec --no-startup-id dunst
+
+# Battery monitor
+exec --no-startup-id /opt/cliperx/hardware/battery_monitor.py
+
+# Auto screen lock (5 min)
+exec --no-startup-id xautolock -time 5 -locker "i3lock -c 1a1a2e -e -f"
+
+# ========================
+# Key Bindings
+# ========================
+
+# Terminal (Alacritty)
+bindsym $mod+Return exec alacritty
+
+# Application launcher (Rofi)
+bindsym $mod+d exec rofi -show drun -theme cliperx
+bindsym $mod+Tab exec rofi -show window -theme cliperx
+
+# File manager
+bindsym $mod+e exec thunar
+
+# Screenshot
+bindsym Print exec scrot '%Y-%m-%d_%H-%M-%S.png' -e 'mv $f ~/Pictures/'
+bindsym $mod+Print exec scrot -s '%Y-%m-%d_%H-%M-%S.png' -e 'mv $f ~/Pictures/'
+
+# Lock screen
+bindsym $mod+l exec i3lock -c 1a1a2e -e -f
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# ========================
+# Quick-Launch Hacking Tools
+# ========================
+
+# Metasploit
+bindsym $mod+m exec alacritty -e msfconsole
+
+# Burp Suite
+bindsym $mod+b exec burpsuite
+
+# Wireshark
+bindsym $mod+w exec wireshark
+
+# Nmap scan
+bindsym $mod+n exec alacritty -e bash -c 'echo "Enter target:"; read target; nmap -sV -sC $target; exec bash'
+
+# Network monitor
+bindsym $mod+Shift+n exec alacritty -e bettercap
+
+# ========================
+# Window Management
+# ========================
+
+# Focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move windows
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Split
+bindsym $mod+h split h
+bindsym $mod+v split v
+
+# Layout
+bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+Shift+s layout toggle split
+
+# Fullscreen
+bindsym $mod+f fullscreen toggle
+
+# Floating
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+
+# Scratchpad
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+# ========================
+# Workspaces
+# ========================
+
+set $ws1 "1:  Terminal"
+set $ws2 "2:  Browser"
+set $ws3 "3:  Recon"
+set $ws4 "4:  Exploit"
+set $ws5 "5:  Wireless"
+set $ws6 "6:  Web"
+set $ws7 "7:  Files"
+set $ws8 "8:  Monitor"
+set $ws9 "9:  Config"
+set $ws10 "10:  Misc"
+
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+# ========================
+# Resize Mode
+# ========================
+
+mode "resize" {
+    bindsym Left resize shrink width 5 px or 5 ppt
+    bindsym Down resize grow height 5 px or 5 ppt
+    bindsym Up resize shrink height 5 px or 5 ppt
+    bindsym Right resize grow width 5 px or 5 ppt
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+# ========================
+# Power Menu
+# ========================
+
+set $mode_system (l)ock, (s)uspend, (r)eboot, (p)oweroff
+mode "$mode_system" {
+    bindsym l exec i3lock -c 1a1a2e -e -f, mode "default"
+    bindsym s exec systemctl suspend, mode "default"
+    bindsym r exec systemctl reboot, mode "default"
+    bindsym p exec systemctl poweroff, mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+e mode "$mode_system"
+
+# Reload / Restart i3
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+
+# ========================
+# Display & Brightness
+# ========================
+
+bindsym XF86MonBrightnessUp exec cliperx-brightness up
+bindsym XF86MonBrightnessDown exec cliperx-brightness down
+
+# Volume
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
