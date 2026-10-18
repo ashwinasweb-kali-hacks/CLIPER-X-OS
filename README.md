@@ -35,6 +35,7 @@
 | **Bluetooth** | BT 5.0 + External Ubertooth One |
 | **SDR** | HackRF One / RTL-SDR (optional) |
 | **Form Factor** | Custom 3D-printed laptop chassis |
+| **Build Host Laptop** | Lenovo ThinkPad Intel Core i7 (Host for Linux Kernel 6.6 LTS compilation & debootstrap rootfs building) |
 
 ## Architecture
 

@@ -11,5 +11,6 @@ Item,Component,Description,Quantity,Unit_Price_USD,Shipping_USD,Total_USD,Purcha
 10,PETG 3D Printing Filament,1kg Black PETG filament for durable laptop enclosure chassis,1,18.99,0.00,18.99,https://www.amazon.com/dp/B07PGZNY34
 11,M2.5 Hardware & Standoff Kit,Brass threaded standoffs + M2.5 socket head screws + nuts,1,9.99,0.00,9.99,https://www.amazon.com/dp/B085HN6ZJ8
 12,Flat Flexible Cables (FFC) & Misc,Replacement 22-pin DSI cable + thermal interface pads,1,9.99,0.00,9.99,https://www.amazon.com/dp/B0CLL2J92K
+BUILD_HOST,Lenovo ThinkPad i7 Workstation,Intel Core i7 Host Laptop for ARM64 Kernel 6.6 compilation debootstrap & OS image building,1,Development_Host,-,-,Development Tooling
 ,,,,Subtotal:,371.94,9.00,380.94,
 ,,,,Total Funding Requested:,,,380.94,Hack Club Stardance X-Tier Grant
