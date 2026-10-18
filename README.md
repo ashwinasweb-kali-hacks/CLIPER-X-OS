@@ -1,7 +1,15 @@
 # 🔒 CLIPER X OS — Custom Kali Linux for Raspberry Pi 5
 
-> A purpose-built offensive security operating system for the Raspberry Pi 5 (16GB RAM)
-> Hardware: Display, Battery/Charger, Active Cooling, USB-C, Custom Laptop Form Factor
+[![Hack Club Stardance](https://img.shields.io/badge/Hack%20Club-Stardance%20X--Tier%20Grant-yellow.svg)](https://stardance.hackclub.com)
+[![Hardware: Open Source](https://img.shields.io/badge/Hardware-Open%20Source-brightgreen.svg)](CAD/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+<p align="center">
+  <img src="assets/cliper_x_cyberdeck_render.jpg" alt="CLIPER X Cyberdeck Hacking Laptop Render" width="100%" />
+</p>
+
+> **A purpose-built offensive security operating system & custom cyberdeck laptop for Raspberry Pi 5 (16GB RAM)**  
+> Hardware: 7" IPS Touchscreen, 10000mAh Battery/UPS HAT, Active Cooling, Pimoroni NVMe SSD, 60% Mechanical Keyboard, Alfa High-Gain WiFi, and Custom 3D Printed PETG Chassis.
 
 ---
 
