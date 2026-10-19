@@ -6,7 +6,7 @@ set -e
 
 echo "╔══════════════════════════════════════╗"
 echo "║     CLIPER X OS — First Boot Setup   ║"
-echo "║     v1.0.0 (phantom)                 ║"
+echo "║     v1.00 (core)                 ║"
 echo "╚══════════════════════════════════════╝"
 echo ""
 
